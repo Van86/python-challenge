@@ -10,6 +10,8 @@ vote_percentage = 0
 candidates = {}
 candidate = ""
 
+#I gave this one my dardenst 
+
 
 PollData = '/Users/vanjoisscott/Desktop/python-challenge/PyPoll/election_data.csv'
 
@@ -33,7 +35,7 @@ with open(PollData, 'r') as csvfile:
             vote_counts[candidate] + 1
 
 percentages = []
-max_votes = votecounter[0]
+max_votes = vote_counts[0]
 max_index = 0
 #find percentage of vote for each candidate
 for count in range(len(candidates)):
